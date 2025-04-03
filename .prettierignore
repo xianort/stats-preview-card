@@ -4,3 +4,4 @@ images
 style-guide.md
 pnpm-lock.yaml
 dist
+.parcel-cache
