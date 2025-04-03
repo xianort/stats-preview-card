@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,19 +13,34 @@
     />
 
     <title>Frontend Mentor | Stats preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    Get insights that help your business grow. Discover the benefits of data
-    analytics and make better decisions regarding revenue, customer experience,
-    and overall efficiency. 10k+ companies 314 templates 12m+ queries
+    <main>
+      <picture>
+        <source
+          media="(min-width: 1024px)"
+          srcset="./images/image-header-desktop.jpg"
+        />
+        <img src="./images/image-header-mobile.jpg" alt="" />
+      </picture>
+      <h1>Get insights that help your business grow.</h1>
+      <p>
+        Discover the benefits of data analytics and make better decisions
+        regarding revenue, customer experience, and overall efficiency.
+      </p>
+      <ul>
+        <li>10k+ companies</li>
+        <li>314 templates</li>
+        <li>12m+ queries</li>
+      </ul>
 
-    <footer>
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </footer>
+      <footer>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/xianort">xianort</a>.
+      </footer>
+    </main>
   </body>
 </html>
