@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="bg-dark-blue text-transparent-white-75 text-center tracking-wide lg:text-left"
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,33 +26,63 @@
 
     <link rel="stylesheet" href="./main.css" />
   </head>
-  <body>
-    <main>
-      <picture>
-        <source
-          media="(min-width: 1024px)"
-          srcset="../images/image-header-desktop.jpg"
-        />
-        <img src="../images/image-header-mobile.jpg" alt="" />
-      </picture>
-      <h1>Get insights that help your business grow.</h1>
-      <p>
-        Discover the benefits of data analytics and make better decisions
-        regarding revenue, customer experience, and overall efficiency.
-      </p>
-      <ul>
-        <li>10k+ companies</li>
-        <li>314 templates</li>
-        <li>12m+ queries</li>
-      </ul>
+  <body class="flex min-h-dvh items-center justify-center p-4">
+    <main
+      class="bg-desaturated-blue mx-auto max-w-[26.5625rem] overflow-hidden rounded-lg lg:grid lg:max-w-5xl lg:grid-cols-2"
+    >
+      <div class="bg-soft-violet order-2">
+        <picture class="mix-blend-multiply">
+          <source
+            media="(min-width: 64rem)"
+            srcset="../images/image-header-desktop.jpg"
+          />
+          <img src="../images/image-header-mobile.jpg" alt="" />
+        </picture>
+      </div>
+      <div
+        class="space-y-4 px-8 pt-12 pb-10 lg:space-y-8 lg:px-16 lg:pt-14 lg:pb-12"
+      >
+        <h1>
+          Get <span class="text-soft-violet">insights</span> that help your
+          business grow.
+        </h1>
+        <p>
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <dl
+          class="mt-12 space-y-8 text-xs tracking-widest uppercase lg:mt-16 lg:flex lg:flex-row lg:justify-between lg:space-y-0"
+        >
+          <div class="flex flex-col gap-1">
+            <dt class="order-2">companies</dt>
+            <dd>
+              10<span aria-hidden="true">k+</span>
+              <span class="sr-only">thousand plus</span>
+            </dd>
+          </div>
+          <div class="flex flex-col gap-1">
+            <dt class="order-2">templates</dt>
+            <dd>314</dd>
+          </div>
+          <div class="flex flex-col gap-1">
+            <dt class="order-2">queries</dt>
+            <dd>
+              12<span aria-hidden="true">m+</span>
+              <span class="sr-only">million plus</span>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </main>
 
-      <footer>
+    <footer class="sr-only">
+      <p>
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by
         <a href="https://www.frontendmentor.io/profile/xianort">xianort</a>.
-      </footer>
-    </main>
+      </p>
+    </footer>
   </body>
 </html>

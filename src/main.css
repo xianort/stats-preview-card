@@ -1,4 +1,47 @@
 @import "tailwindcss";
 
 @theme {
+  --font-*: initial;
+  --font-sans: "Lexend Deca", sans-serif;
+  --font-inter: Inter, sans-serif;
+  --font-lexend-deca: "Lexend Deca", sans-serif;
+
+  --color-*: initial;
+  --color-dark-blue: oklch(0.16 0.0315 276.46);
+  --color-desaturated-blue: oklch(0.24 0.0582 284.01);
+  --color-soft-violet: oklch(0.62 0.1944 310.4);
+  --color-white: oklch(1 0 0);
+  --color-transparent-white-75: oklch(1 0 0 / 75%);
+  --color-transparent-white-60: oklch(1 0 0 / 60%);
+}
+
+@layer base {
+  h1 {
+    color: var(--color-white);
+    font-size: 2rem;
+    font-family: var(--font-inter);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--leading-tight);
+  }
+
+  p {
+    line-height: var(--leading-relaxed);
+  }
+
+  dt {
+    color: var(--color-transparent-white-60);
+  }
+
+  dd {
+    color: var(--color-white);
+    font-size: var(--text-2xl);
+    font-family: var(--font-inter);
+    font-weight: var(--font-weight-bold);
+  }
+
+  @media (min-width: 64rem) {
+    h1 {
+      font-size: 2.1rem;
+    }
+  }
 }
