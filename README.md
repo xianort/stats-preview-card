@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution]()
+- [Solution](https://www.frontendmentor.io/solutions/stats-preview-card-tailwindcss-bbpyfcouhE)
 - [Live site](https://symphonious-bavarois-018158.netlify.app/)
 
 ## My process
